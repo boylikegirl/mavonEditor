@@ -161,22 +161,23 @@ export const toolbar_left_click = (_type, $vm) => {
              str: '|column1|column2|column3|\n|-|-|-|\n|content1|content2|content3|\n'
          },
          'aligncenter': {
-           prefix: '::: hljs-center\n\n',
-           subfix: '\n\n:::\n',
+           prefix: '<center>\n\n',
+           subfix: '\n\n</center>\n',
            str: $vm.d_words.tl_aligncenter
          },
          'alignright': {
-           prefix: '::: hljs-right\n\n',
-           subfix: '\n\n:::\n',
+           prefix: '<p align="">\n\n',
+           subfix: '\n\n</p>\n',
            str: $vm.d_words.tl_alignright
          },
          'alignleft': {
-           prefix: '::: hljs-left\n\n',
-           subfix: '\n\n:::\n',
+           prefix: '<p align="left">\n\n',
+           subfix: '\n\n</p>\n',
            str: $vm.d_words.tl_alignleft
          }
      };
      if (_param_of_insert_text.hasOwnProperty(_type)) {
+        debugger
          // 插入对应的内容
          $vm.insertText($vm.getTextareaDom(),
              _param_of_insert_text[_type]);

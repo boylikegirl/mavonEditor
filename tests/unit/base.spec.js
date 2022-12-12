@@ -114,22 +114,22 @@ describe('left-toolbars测试', () => {
 
     it('居左按钮', async () => {
         let buttonClass = '.op-icon.fa.fa-mavon-align-left'
-        let textValue = '::: hljs-left\n\n居左\n\n:::'
-        let htmlValue = '<div class="hljs-left">\n<p>居左</p>\n</div>'
+        let textValue = '<p align=\'left\'>\n\n居左\n\n</p>'
+        let htmlValue = '<p align=\'left\'>\n<p>居左</p>\n</p>'
         await checkButton(buttonClass, textValue, htmlValue)
     })
 
     it('居中按钮', async () => {
         let buttonClass = '.op-icon.fa.fa-mavon-align-center'
-        let textValue = '::: hljs-center\n\n居中\n\n:::'
-        let htmlValue = '<div class="hljs-center">\n<p>居中</p>\n</div>'
+        let textValue = '<center>\n\n居中\n\n</center>'
+        let htmlValue = '<center>\n<p>居中</p>\n</center>'
         await checkButton(buttonClass, textValue, htmlValue)
     })
 
     it('居右按钮', async () => {
         let buttonClass = '.op-icon.fa.fa-mavon-align-right'
-        let textValue = '::: hljs-right\n\n居右\n\n:::'
-        let htmlValue = '<div class="hljs-right">\n<p>居右</p>\n</div>'
+        let textValue = '<p align=\'right\'>\n\n居右\n\n</p>'
+        let htmlValue = '<p align=\'right\'>\n<p>居右</p>\n</p>'
         await checkButton(buttonClass, textValue, htmlValue)
     })
 
